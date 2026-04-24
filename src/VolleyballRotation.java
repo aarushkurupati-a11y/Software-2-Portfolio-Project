@@ -3,7 +3,6 @@ import java.util.List;
 
 public class VolleyballRotation {
 
-
     private List<String> players;
 
     /**
@@ -39,6 +38,31 @@ public class VolleyballRotation {
      */
     public int numberOfPlayers() {
         return this.players.size();
-    
+    }
+
+    /**
+     * Main method for testing the rotation.
+     */
+    public static void main(String[] args) {
+
+        VolleyballRotation rotation = new VolleyballRotation();
+
+        // Add players
+        rotation.addPlayer("Alpha");
+        rotation.addPlayer("Beta");
+        rotation.addPlayer("Charlie");
+        rotation.addPlayer("Delta");
+
+        // Display basic info
+        System.out.println("First player: " + rotation.playerAt(0));
+        System.out.println("Total players: " + rotation.numberOfPlayers());
+
+        // Remove a player
+        rotation.removePlayer(1); // removes Beta
+
+        // Display after removal
+        System.out.println("After removal:");
+        System.out.println("Total players: " + rotation.numberOfPlayers());
+        System.out.println("New second player: " + rotation.playerAt(1));
     }
 }
