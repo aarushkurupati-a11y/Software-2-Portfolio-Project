@@ -8,9 +8,9 @@ public abstract class VolleyballRotationSecondary
     public String currentServer() {
         assert this.size() > 0 : "Rotation must not be empty";
 
-        String server = this.removeServer();
-        this.addPlayer(server); // restore
-        return server;
+        String front = this.removeServer();
+        this.addPlayer(front);
+        return front;
     }
 
     @Override
@@ -56,9 +56,9 @@ public abstract class VolleyballRotationSecondary
 
     @Override
     public void rotateTo(String player) {
-        assert this.containsPlayer(player) : "Player must exist in rotation";
+        assert this.containsPlayer(player) : "Player must exist";
 
-        while (!this.currentServer().equals(player)) {
+        while (!this.playerAtPosition(0).equals(player)) {
             this.rotate();
         }
     }
