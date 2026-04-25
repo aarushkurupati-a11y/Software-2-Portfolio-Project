@@ -189,7 +189,7 @@ the following form: YYYY.0M.0D.
 ### Updated
 
 - Changed design to include ...
-
+interfaces for both kernel and secondary methods
 ```
 
 Here `YYYY.MM.DD` would be the date of your submission, such as 2024.04.21.
