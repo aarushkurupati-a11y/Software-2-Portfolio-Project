@@ -4,7 +4,7 @@ import java.util.List;
 /**
  * Kernel implementation of VolleyballRotationKernel using ArrayList.
  */
-public class VolleyballRotation1L implements VolleyballRotationKernel {
+public class VolleyballRotation1L extends VolleyballRotationSecondary {
 
     private List<String> rep;
 
