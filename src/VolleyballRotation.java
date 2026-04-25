@@ -1,44 +1,54 @@
-import java.util.ArrayList;
-import java.util.List;
-
-public class VolleyballRotation {
-
-
-    private List<String> players;
+/**
+ * VolleyballRotation enhances VolleyballRotationKernel with secondary
+ * convenience methods.
+ */
+public interface VolleyballRotation extends VolleyballRotationKernel {
 
     /**
-     * Constructor initializes an empty rotation.
+     * Reports the player currently serving.
+     *
+     * @return the current server
+     * @requires |this| > 0
+     * @ensures server = head(this)
      */
-    public VolleyballRotation() {
-        this.players = new ArrayList<>();
-    }
+    String currentServer();
 
     /**
-     * Adds a player to the end of the rotation.
+     * Reports whether a player is in the rotation.
+     *
+     * @param player
+     *            the player to check
+     * @return true if the player exists in the rotation
+     * @ensures containsPlayer = (player is in entries of this)
      */
-    public void addPlayer(String name) {
-        this.players.add(name);
-    }
+    boolean containsPlayer(String player);
 
     /**
-     * Removes the player at the given position.
+     * Returns the player at a given position.
+     *
+     * @param position
+     *            the index in the rotation
+     * @return the player at that position
+     * @requires 0 <= position < |this|
+     * @ensures player = this[position]
      */
-    public void removePlayer(int position) {
-        this.players.remove(position);
-    }
+    String playerAtPosition(int position);
 
     /**
-     * Returns the player at the given position.
+     * Rotates until the given player is the server.
+     *
+     * @param player
+     *            the player to rotate to front
+     * @requires contains(player)
+     * @updates this
      */
-    public String playerAt(int position) {
-        return this.players.get(position);
-    }
+    void rotateTo(String player);
 
     /**
-     * Returns the number of players in the rotation.
+     * Clears the rotation and resets it to empty.
+     *
+     * @updates this
+     * @ensures this = <>
      */
-    public int numberOfPlayers() {
-        return this.players.size();
-    
-    }
+    void resetRotation();
 }
