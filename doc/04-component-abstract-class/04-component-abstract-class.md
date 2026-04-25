@@ -166,7 +166,7 @@ the following form: YYYY.0M.0D.
 
 ### Updated
 
-- Changed design to include rotate to a specific player on serve...
+- Changed design to include rotate to a specific player on serve as a method in the enhanced interface, and implemented this method in said abstract class...
 
 ```
 
