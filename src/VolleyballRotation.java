@@ -35,6 +35,16 @@ public interface VolleyballRotation extends VolleyballRotationKernel {
     String playerAtPosition(int position);
 
     /**
+     * Rotates until the given player is the server.
+     *
+     * @param player
+     *            the player to rotate to front
+     * @requires contains(player)
+     * @updates this
+     */
+    void rotateTo(String player);
+
+    /**
      * Clears the rotation and resets it to empty.
      *
      * @updates this
