@@ -35,8 +35,8 @@ public abstract class VolleyballRotationSecondary
 
     @Override
     public String playerAtPosition(int position) {
-        assert 0 <= position && position < this.size()
-                : "Position out of bounds";
+        assert 0 <= position
+                && position < this.size() : "Position out of bounds";
 
         String result = null;
         int n = this.size();
@@ -56,8 +56,7 @@ public abstract class VolleyballRotationSecondary
 
     @Override
     public void rotateTo(String player) {
-        assert this.containsPlayer(player)
-                : "Player must exist in rotation";
+        assert this.containsPlayer(player) : "Player must exist in rotation";
 
         while (!this.currentServer().equals(player)) {
             this.rotate();
