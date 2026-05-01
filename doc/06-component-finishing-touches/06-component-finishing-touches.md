@@ -1,8 +1,8 @@
 # Portfolio Part 6: Finishing Touches
 
-- **Name**: <!-- TODO: fill with first and last name (e.g., Brutus Buckeye) and delete this comment -->
-- **Dot Number**: <!-- TODO: fill with OSU dot number (e.g., buckeye.17) and delete this comment -->
-- **Due Date**: <!-- TODO: fill out with due date and time (e.g., 10/17 @ 3:10 PM EST) and delete this comment -->
+- **Name**: Aarush Kurupati
+- **Dot Number**: Kurupati.2
+- **Due Date**: 04/24 @ 11:59 PM EST
 
 ## Assignment Overview
 
@@ -307,18 +307,18 @@ Take some time to fill them out honestly.
 > complete the portfolio project, how much better (or worse) do you think you
 > understand software development and why?
 
-<!-- TODO: discuss -->
+I feel like this project gave me a much better understanding of how software is actually structured beyond just writing code that works. I now see how important design layers are (kernel vs secondary) and how each part builds on the other rather than code all being one piece. It also made me realize how much planning goes into making code usable. Overall, I understand software development better because I had to think more like a system designer instead of just a programmer.
 
 > Also, did the portfolio project surface any gaps in your own knowledge of
 > software development. If so, what are those gaps and how did you address them?
 
-<!-- TODO: discuss -->
+This project helped me find my gaps in my understanding of abstraction, especially how interfaces, abstract classes, and implementation classes connect. I also struggled at first with things like method visibility across layers and issues like type mismatches. I addressed these by reviewing documentation, experimenting with small test cases, and debugging step by step instead of trying to guess the full solution at once. I also learned to read error messages more carefully, since they usually pointed directly to the issue.
 
 > Finally, as a part of completing the portfolio project, to what extent has
 > your perspective of software development changed, if at all? In other words,
 > is software development something you still enjoy? If not, why not?
 
-<!-- TODO: discuss -->
+This project didn’t make me dislike software development whatsoever, in fact, I think being able to make it on whatever we wanted made it more interesting. It was definitely frustrating at times, especially when small design mistakes break everything, but I think that challenge is also what makes it rewarding. I still enjoy it and I’m more interested in improving my ability to design software well, not just make it work.
 
 > One of the challenges of completing the portfolio project is picking up a lot
 > of skills on your own. Some of these skills are, of course, software skills.
@@ -326,25 +326,29 @@ Take some time to fill them out honestly.
 > this process. Therefore, the first question is what skills did you pick up
 > through this process?
 
-<!-- TODO: discuss -->
+Through this project, I gained both technical and non-technical skills. On the technical side, I improved my understanding of Java interfaces, inheritance, JUnit testing, and debugging in general. On the non-technical side, I learned how to think more systematically, break problems into layers, and be more careful about design decisions before coding.
 
 > The follow-up question is: could you rephrase these skills you picked up
 > as bullet points that you could put on a resume? Try it below.
 
-<!-- TODO: discuss -->
+Designed and implemented a layered Java software component using interface, abstract class, and kernel architecture
+Developed and executed JUnit test suites to verify correctness of multiple abstraction levels
+Applied object-oriented design principles including encapsulation, abstraction, and inheritance
+Debugged complex type and runtime errors in a structured development environment
+Created reusable software components and example applications demonstrating real-world usage
 
 > Next, how has working on this project affected your career trajectory?
 > In other words, do you now hate the topic you picked? Or, are you even more
 > interested in it? Both outcomes are valuable to your personal development.
 
-<!-- TODO: discuss -->
+This project made me more interested in software development, especially in system design and backend-style thinking. I liked the process of building something structured from the ground up and seeing how each layer depends on the others. It also made me realize I need to get stronger in debugging and understanding frameworks more deeply, but overall it pushed me further toward wanting to continue in computer science rather than away from it.
 
 > Finally, consider the skills you've picked up and your current career
 > trajectory. What are some things you could do to continue on your
 > career trajectory? Also, who are some mentors you could contact to help
 > you stay on your path?
 
-<!-- TODO: discuss -->
+I want to keep practicing Java and work on more projects that involve system design and real-world applications. I also want to get better at writing clean tests and understanding larger codebases. Outside of class, contributing to open-source projects or building personal projects would help a lot. In terms of mentors, I could reach out to professors, teaching assistants, or upper-level CS students who have more experience with software engineering.
 
 ### Changelog
 
@@ -363,16 +367,16 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/),
 and this project adheres to [Calendar Versioning](https://calver.org/) of
 the following form: YYYY.0M.0D.
 
-## YYYY.MM.DD
+## 2026.04.24
 
 ### Added
 
-- Designed test suite for <!-- insert name of component here --> component
-- Designed two different use cases for <!-- insert name of component here --> component
+- Designed test suite for VolleyballRotation component
+- Designed two different use cases for VolleyballRotation --> component
 
 ### Updated
 
-- Changed design to include ...
+- Changed design to include tests and simulation cases...
 
 ```
 
